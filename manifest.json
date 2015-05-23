@@ -1,0 +1,16 @@
+{
+  "name": "Google Now Email",
+  "description": "Adds email functionality to Google Now in Google Chrome.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {"scripts":["background.js"]},
+  "icons": { "128": "icon128.png" },
+  "permissions": [
+    "webRequest",
+    "*://www.google.com/*gs_ivs=1*q=email+*",
+    "*://google.com/*gs_ivs=1*q=email+*",
+    "*://www.google.com/*gs_ivs=1*q=send+*email*",
+    "*://google.com/*gs_ivs=1*q=send+*email*",
+    "webRequestBlocking"
+  ]
+}
